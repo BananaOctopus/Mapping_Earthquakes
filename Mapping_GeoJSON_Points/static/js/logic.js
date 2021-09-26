@@ -1,11 +1,9 @@
 // Add console.log to check to see if our code is working.
-console.log("working");
+console.log('working');
 
 // Accessing the airport GeoJSON URL
 let airportData =
  'https://raw.githubusercontent.com/BananaOctopus/Mapping_Earthquakes/main/majorAirports.json';
-
-
 
 // Grabbing our GeoJSON data.
 d3.json(airportData).then(function(data) {
@@ -47,4 +45,3 @@ let map = L.map('mapid', {
 
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
-
